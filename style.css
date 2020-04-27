@@ -1,3 +1,9 @@
+/*
+This quiz borrows the styling I created for more portfolio site using Tachyons.io for responsive design.
+Because of this, much of a linked CSS is made redundant.
+ */
+
+ /*
 body {
 	font-family: 'Lato', sans-serif;
 }
@@ -6,45 +12,47 @@ body {
 
 #quiz {
 	margin-left: 10px;
-	background: #d2def2;
 	padding: 10px 20px 10px 20px;
-	width: 400px;
 	border-radius: 20px;
 	float: left;
-
 }
-
+*/
 input {
-	margin-bottom: 20px;
-	display: block;
+	margin-left: 2em;
 }
 
+input[type=radio]{
+  background-color: black;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
 #textbox {
 	height: 25px;
 	font-size: 16px;
 	border-radius: 5px;
-	border: none;
+	border: solid;
 	padding-left: 5px;
 }
 
 
 #button {
-	background: green;
+	background: #ef8532;
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
-	color: white;
 	font-size: 16px;
-	transition-duration: .5s;
 	margin-top: 15px;
 }
 
 
 
 #button:hover {
-	background: white;
-	border: 1px solid green;
-	color: black;
+	background: black;
+	color: white;
 	cursor: pointer;
 
 }
@@ -71,4 +79,5 @@ input {
 
 #mc {
 	display: inline;
-} 
+}
+*/

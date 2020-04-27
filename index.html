@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
-<title>Kevin's Kwiz!</title>
-<link href ="style.css" rel ="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<script src = "main.js"></script>
+      <meta content-type="text/html">
+      <meta charset="utf-8">
+      <title>Z. Albright</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css">
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+      <link rel="icon" src="img/orange.png">
+      <script src = "main.js"></script>
 
-</head>
-
-
-<body>
-<h1>This is best quiz on the internet!</h1>
-
-
-<form id = "quiz" name = "quiz">
+  </head>
 
 
-<p class = "questions">What is the capital of Rhode Island?</p>
-<input id = "textbox" type = "text" name = "question1">
+  <body class="w-100 sans-serif fw5 center">
+      <header class="cd center ph6-l ">
+        <section class="fl mt4 mb4 w-100 pb4-ns ph4-ns pt5 pt6-ns">
+          <a class="link" href="index"><div class="tc ph3">
+            <img
+                src="img/orange.png"
+                class="br-100 h3 w3 dib fl" alt="orange">
+          </div></a>
 
-<p class = "questions">What is the capital of Connecticut?</p>
-<input type = "radio" id = "mc" name = "question2" value = "Hartford"> Hartford<br>
-<input type = "radio" id = "mc" name = "question2" value = "Heartford"> Heartford<br>
+          <h1 class="fl f3 mh3 mt0">Z.&nbsp;Albright<br><a class="link hover-white hover-bg-black black" href="mailto:albrig68@msu.edu">albrig68@msu.edu</a><br>WRA 410 Quiz</h1>
+        </section>
+      </header>
 
-<p class = "questions">What is the capital of New York?</p>
-
-<input type = "radio" id = "mc" name = "question3" value = "Albany"> Albany<br>
-<input type = "radio" id = "mc" name = "question3" value = "All Benny's"> All Benny's<br>
+    <main class="pa3 ph6-l fl-l w-two-thirds-l">
+      <form class="ph4-ns" autocomplete="off" id = "quiz" name = "quiz">
 
 
-<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+      <p class = "f4 questions">1. What command is needed to initialize a GitHub repository (Git ______ ?)</p>
+      <input id = "textbox" type = "text" name = "question1">
+
+      <p class = "f4 questions">2. What comes first when updating a repository on Github, “git push” or “git commit?</p>
+      <input type = "radio" id = "mc" name = "question2" value = "push"> Push<br>
+      <input type = "radio" id = "mc" name = "question2" value = "commit"> Commit<br>
+
+      <p class = "f4 questions">3. What can the touch command do in Unix?</p>
+
+      <input type = "radio" id = "mc" name = "question3" value = "create file"> Create a file<br>
+      <input type = "radio" id = "mc" name = "question3" value = "move"> Move two files together<br>
+      <input type = "radio" id = "mc" name = "question3" value = "create folder"> Create a folder<br>
+
+      <p class = "f4 questions">4. In UNIX, command line is ready to “interpret and execute” your commands if it ends in what symbol?</p>
+      <input type = "radio" id = "mc" name = "question4" value = "ampersand"> &<br>
+      <input type = "radio" id = "mc" name = "question4" value = "pound"> #<br>
+      <input type = "radio" id = "mc" name = "question4" value = "$"> $<br>
+
+      <p class = "f4 questions">5. In this Ruby array: [Grand Rapids, East Lansing, Detroit], what string is in position 2?</p>
+      <input id = "textbox" type = "text" name = "question5">
+
+      <p class = "f4 questions">6. What is the biggest difference between puts and print in ruby?</p>
+      <input type = "radio" id = "mc" name = "question6" value = "newline"> Puts adds a new line.<br>
+      <input type = "radio" id = "mc" name = "question6" value = "commit"> Print and puts are unrelated.<br>
+      <input type = "radio" id = "mc" name = "question6" value = "commit"> Print skips command line and creates a hard copy.<br>
+
+      <p class = "f4 questions">7. What must you change to to set a new index page in rails.</p>
+      <input type = "radio" id = "mc" name = "question7" value = "index"> index.rb<br>
+      <input type = "radio" id = "mc" name = "question7" value = "route"> route.rb<br>
+      <input type = "radio" id = "mc" name = "question7" value = "commit"> home.rb<br>
+
+      <p class = "f4 questions">8. What does CRUD stand for?</p>
+      <input type = "radio" id = "mc" name = "question8" value = "newline"> Create Reiterate Update Delete<br>
+      <input type = "radio" id = "mc" name = "question8" value = "commit"> Command Revise Use Destroy<br>
+      <input type = "radio" id = "mc" name = "question8" value = "CRUD"> Create Read Update Delete<br>
+
+      <p class = "f4 questions">9. Javascript is an object oriented language.</p>
+      <input type = "radio" id = "mc" name = "question9" value = "true"> True<br>
+      <input type = "radio" id = "mc" name = "question9" value = "false"> False<br>
+
+      <p class = "f4 questions">10. What does the link tag do in HTML?</p>
+      <input type = "radio" id = "mc" name = "question10" value = "true">The link tag creates a new subpage in the html.<br>
+      <input type = "radio" id = "mc" name = "question10" value = "link"> The link tage creates a connection to the html page and another source, such as a CSS or webpage.<br>
+
+      <a href="#number_correct" class="f3 link hover-bg-white hover-black bg-black white mt5 lh-copy w4" id = "button" type = "button" value = "Submit" onclick = "check();">Submit.</a>
 
 
-</form>
+      </form>
+    </main>
 
-<div id = "after_submit">
-<p id = "number_correct"></p>
-<p id = "message"></p>
-<img id = "picture">
-</div>
+    <div class="pa3 fr-l w-third-l" id = "after_submit">
+      <p id = "number_correct"></p>
+      <p id = "message"></p>
+      <img id = "picture">
+    </div>
+
+  </body>
 </html>
-
-</body>
-
-
-
