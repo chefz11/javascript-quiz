@@ -46,18 +46,23 @@ if (question10 == "link") {
 	correct++;
 }
 
-	var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
-	var messages = ["Great job!", "That's just okay", "You really need to do better"];
+	var pictures = ["img/perfect.jpg", "img/prettygood.gif", "img/meh.jpeg", "img/weebey.gif", "img/lose.gif"];
+	var messages = ["Perfect!", "Pretty.... pretty... pretty good....", "That's just okay", "You got exactly half right!", "You really need to do better"];
 	var score;
 
 	if (correct == 0) {
+		score = 4;
+	}
+
+	if (correct > 0 && correct < 5) {
 		score = 2;
 	}
-
-	if (correct > 0 && correct < 10) {
+	if (correct == 5) {
+		score = 3;
+	}
+	if (correct > 5 && correct < 10) {
 		score = 1;
 	}
-
 	if (correct == 10) {
 		score = 0;
 	}

@@ -11,3 +11,5 @@
 5. Changed submit button to highlighted text. This brings the content in-line with the style. The next step would be changing mc radio options as well, but I had difficulties editing that prompt without effecting the quiz structure.
 
 6. Turned off autocomplete on the main form so that prior answers do not appear when taking the quiz multiple times on the same device.
+
+7. Added additional result prompts for a 5/10, 5-9, and perfect performances.
