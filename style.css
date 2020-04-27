@@ -20,15 +20,6 @@ body {
 input {
 	margin-left: 2em;
 }
-
-input[type=radio]{
-  background-color: black;
-  border: none;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /*
 #textbox {
 	height: 25px;

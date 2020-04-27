@@ -31,7 +31,7 @@
       <form class="ph4-ns" autocomplete="off" id = "quiz" name = "quiz">
 
 
-      <p class = "f4 questions">1. What command is needed to initialize a GitHub repository (Git ______ ?)</p>
+      <p class = "f4 questions">1. What command is needed to initialize a GitHub repository (Git&nbsp;______ ?)</p>
       <input id = "textbox" type = "text" name = "question1">
 
       <p class = "f4 questions">2. What comes first when updating a repository on Github, “git push” or “git commit?</p>
@@ -72,16 +72,15 @@
       <input type = "radio" id = "mc" name = "question9" value = "false"> False<br>
 
       <p class = "f4 questions">10. What does the link tag do in HTML?</p>
-      <input type = "radio" id = "mc" name = "question10" value = "true">The link tag creates a new subpage in the html.<br>
-      <input type = "radio" id = "mc" name = "question10" value = "link"> The link tage creates a connection to the html page and another source, such as a CSS or webpage.<br>
-
-      <a href="#number_correct" class="f3 link hover-bg-white hover-black bg-black white mt5 lh-copy w4" id = "button" type = "button" value = "Submit" onclick = "check();">Submit.</a>
+      <input class=""type = "radio" id = "mc" name = "question10" value = "true">The link tag creates a new subpage in the html.<br>
+      <input type = "radio" id = "mc" name = "question10" value = "link"> The link tage creates a connection to the html page and another source, such as a CSS or webpage.<br><br><br>
+      <a href="#number_correct" class="f3 link hover-bg-white hover-black bg-black white mt3 pa3 lh-copy" id = "button" value = "Submit" onclick = "check();">Submit</a>
 
 
       </form>
     </main>
 
-    <div class="pa3 fr-l w-third-l" id = "after_submit">
+    <div class="bg-white black pa3 fr-l w-third-l" id = "after_submit">
       <p id = "number_correct"></p>
       <p id = "message"></p>
       <img id = "picture">
